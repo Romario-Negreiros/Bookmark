@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
   <title>Frontend Mentor | Bookmark landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <header id="header" class="navbar navbar-expand-md navbar-light p-sm-4">
+    <nav class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="src/assets/logo-bookmark.svg" alt="Bookmark" height="22px">
+      </a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <img src="src/assets/icon-hamburger.svg" alt="toggle navigation">
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link me-md-4">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link bg-red">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  Features
-  Pricing
-  Contact
-  Login
+  <!-- A Simple Bookmark Manager
 
-  A Simple Bookmark Manager
-
-  A clean and simple interface to organize your favourite websites. Open a new 
+  A clean and simple interface to organize your favourite websites. Open a new
   browser tab and see your sites load instantly. Try it for free.
 
   Get it on Chrome
@@ -31,7 +58,7 @@
 
   Features
 
-  Our aim is to make it quick and easy for you to access your favourite websites. 
+  Our aim is to make it quick and easy for you to access your favourite websites.
   Your bookmarks sync between your devices so you can access them on the go.
 
   Simple Bookmarking
@@ -40,28 +67,28 @@
 
   Bookmark in one click
 
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+  Organize your bookmarks however you like. Our simple drag-and-drop interface
   gives you complete control over how you manage your favourite sites.
 
   More Info
 
   Intelligent search
 
-  Our powerful search feature will help you find saved sites in no time at all. 
+  Our powerful search feature will help you find saved sites in no time at all.
   No need to trawl through all of your bookmarks.
 
   More Info
 
   Share your bookmarks
 
-  Easily share your bookmarks and collections with others. Create a shareable 
+  Easily share your bookmarks and collections with others. Create a shareable
   link that you can send at the click of a button.
 
   More Info
 
   Download the extension
 
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+  We’ve got more browsers in the pipeline. Please do let us know if you’ve
   got a favourite you’d like us to prioritize.
 
   Add to Chrome
@@ -77,39 +104,39 @@
   Add & Install Extension
 
   Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
+
+  Here are some of our FAQs. If you have any other questions you’d like
   answered please feel free to email us.
 
-  <!-- Question 1 -->
+  Question 1
   What is Bookmark?
 
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  Answer 1
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
   justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
 
-  <!-- Question 2 -->
+  Question 2
   How can I request a new browser?
 
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+  Answer 2
+  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
   Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
 
-  <!-- Question 3 -->
+  Question 3
   Is there a mobile app?
 
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+  Answer 3
+  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
   sollicitudin ex et ultricies bibendum.
 
-  <!-- Question 4 -->
+  Question 4
   What about other Chromium browsers?
 
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+  Answer 4
+  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
   vitae neque eget nisl gravida pellentesque non ut velit.
 
   More Info
@@ -122,13 +149,7 @@
 
   Features
   Pricing
-  Contact
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  Contact -->
 </body>
+
 </html>
