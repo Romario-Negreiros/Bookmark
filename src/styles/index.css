@@ -10,7 +10,6 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-
 .bg-blue {
   background-color: var(--soft-blue);
 }
@@ -101,6 +100,18 @@ body {
   display: block;
 }
 
+#hero .illustration-image {
+
+}
+
+#hero .bg-blue {
+  color: #fff;
+}
+
+#hero button {
+  padding: 8px 10px;
+}
+
 @media screen and (min-width: 768px) {
   #header .navbar-collapse {
     position: unset;
@@ -143,5 +154,9 @@ body {
 
   #header .navbar-brand img {
     height: 26px;
+  }
+
+  #hero button {
+    padding: 8px 30px;
   }
 }
