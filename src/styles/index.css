@@ -5,9 +5,11 @@
   --very-dark-blue: hsl(229, 31%, 21%);
 }
 
-*, body {
+*,
+body {
   font-family: 'Rubik', sans-serif;
 }
+
 
 .bg-blue {
   background-color: var(--soft-blue);
@@ -22,23 +24,123 @@
 }
 
 .font-very-dark-blue {
-  color: var(--very-dark-blue)
+  color: var(--very-dark-blue);
+}
+
+#header .navbar-brand,
+#header .navbar-toggler {
+  z-index: 1;
+}
+
+#header .switch-brand-image,
+#header .switch-brand-image ~ .navbar-toggler {
+  margin-top: 5px;
+}
+
+#header .navbar-brand img:last-child {
+  display: none;
+}
+
+#header .navbar-collapse {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--very-dark-blue);
+  filter: opacity(0.9);
+}
+
+#header .navbar-nav {
+  flex-flow: row wrap;
+  margin-top: 70px;
+  padding: 5px 15px;
+  height: calc(100% - 80px);
+}
+
+#header .nav-item {
+  width: 100%;
+  border-top: 1px solid var(--grayish-blue);
 }
 
 #header .nav-link {
-  color: var(--very-dark-blue);
-  padding: 8px 30px;
+  color: #fff;
   text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 2px;
+  text-align: center;
+  padding: 15px 0px;
+  font-size: 18px;
 }
 
-#header .nav-item:last-child .nav-link {
-  color: #fff;
-  border-radius: 5px;
+#header .nav-item:nth-child(4) .nav-link {
+  margin-top: 20px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 8px 0;
+  font-weight: 500;
+}
+
+#header .nav-item:last-child {
+  border: 0;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.mobile-menu-active {
+  overflow: hidden;
+}
+
+#header .switch-brand-image img:nth-child(1) {
+  display: none;
+}
+
+#header .switch-brand-image img:nth-child(2) {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
+  #header .navbar-collapse {
+    position: unset;
+    background-color: unset;
+    height: initial;
+    width: initial;
+    filter: unset;
+  }
+
+  #header .navbar-nav {
+    flex-flow: unset;
+    margin-top: unset;
+    padding: 0;
+  }
+
+  #header .nav-item {
+    border: 0;
+    width: initial;
+  }
+
+  #header .nav-link {
+    color: var(--very-dark-blue);
+    font-size: 16px;
+    margin: 6px 0 0 15px;
+    padding: 5px 10px;
+  }
+
+  #header .nav-item:nth-child(4) .nav-link {
+    background-color: var(--soft-red);
+    color: #fff;
+    padding: 8px 35px;
+    border: 0;
+    margin-top: 0;
+    font-weight: initial;
+  }
+
+  #header .nav-item:last-child {
+    display: none;
+  }
+
   #header .navbar-brand img {
     height: 26px;
   }
