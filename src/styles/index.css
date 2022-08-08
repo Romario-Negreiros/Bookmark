@@ -10,6 +10,10 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+body, main {
+  overflow-x: hidden;
+}
+
 .bg-blue {
   background-color: var(--soft-blue);
 }
@@ -92,6 +96,14 @@ body {
   overflow: hidden;
 }
 
+#hero {
+  margin-top: 50px;
+}
+
+#hero .order-md-2 {
+  position: relative;
+}
+
 #header .switch-brand-image img:nth-child(1) {
   display: none;
 }
@@ -101,15 +113,39 @@ body {
 }
 
 #hero .illustration-image {
-
+  z-index: 1;
 }
 
-#hero .bg-blue {
+#hero .image-blue-bg {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  border-bottom-left-radius: 100px;
+  z-index: -1;
+  width: 80%;  
+  height: 80%;
+}
+
+#hero .btn.bg-blue {
   color: #fff;
 }
 
 #hero button {
   padding: 8px 10px;
+}
+
+@media screen and (min-width: 576px) {
+  #hero .order-md-2 {
+    text-align: center;
+  }
+  
+  #hero .image-blue-bg {
+    right: -4rem;
+  }
+
+  #hero .img-fluid {
+    max-width: 600px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -157,6 +193,28 @@ body {
   }
 
   #hero button {
+    padding: 8px 20px;
+  }
+
+  #hero .img-fluid {
+    max-width: 100%;
+  }
+ 
+  #hero .image-blue-bg {
+    width: 100%;
+    height: 75%;
+    bottom: -2%;
+    right: -30%;
+  }
+}
+
+@media screen and (min-width: 976px) {
+  #hero button {
     padding: 8px 30px;
+  }
+
+  #hero .order-md-1 h1,
+  #hero .order-md-1 p {
+    max-width: 500px;
   }
 }
