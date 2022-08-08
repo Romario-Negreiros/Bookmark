@@ -10,7 +10,8 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-body, main {
+body,
+main {
   overflow-x: hidden;
 }
 
@@ -35,7 +36,9 @@ section {
 }
 
 #header .navbar-brand,
-#header .navbar-toggler {
+#header .navbar-toggler,
+#hero .illustration-image,
+#features .illustration-image {
   z-index: 1;
 }
 
@@ -100,7 +103,8 @@ section {
   overflow: hidden;
 }
 
-#hero .order-md-2 {
+#hero .order-md-2,
+#features .illustration-image {
   position: relative;
 }
 
@@ -112,21 +116,19 @@ section {
   display: block;
 }
 
-#hero .illustration-image {
-  z-index: 1;
-}
-
-#hero .image-blue-bg {
+#hero .image-blue-bg,
+#features .image-blue-bg {
   position: absolute;
   bottom: -10px;
   right: 0;
   border-bottom-left-radius: 100px;
   z-index: -1;
-  width: 80%;  
+  width: 80%;
   height: 80%;
 }
 
-#hero .btn.bg-blue {
+#hero .btn.bg-blue,
+#features .bg-blue {
   color: #fff;
 }
 
@@ -195,17 +197,47 @@ section {
   background-color: var(--soft-red);
 }
 
+#features .tabs {
+  margin-top: 70px;
+}
+
+#features button {
+  display: none;
+}
+
+#features .illustration-image .image-blue-bg {
+  width: 90%;
+  height: 90%;
+  left: 0px;
+  bottom: -40px;
+  right: unset;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 100px;
+}
+
+#features .tabs .img-fluid {
+  max-width: 95%;
+}
+
+#features .col-lg-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 90px;
+}
+
 @media screen and (min-width: 576px) {
   #hero .order-md-2 {
     text-align: center;
   }
-  
+
   #hero .image-blue-bg {
     right: -4rem;
   }
 
-  #hero .img-fluid {
-    max-width: 600px;
+  #hero .img-fluid,
+  #features .tabs .img-fluid {
+    max-width: 80%;
   }
 
   #features .nav {
@@ -224,6 +256,10 @@ section {
   #features .nav .nav-link::after {
     width: 100%;
     left: 0 !important;
+  }
+
+  #features .illustration-image .image-blue-bg {
+    left: -40px;
   }
 }
 
@@ -272,18 +308,37 @@ section {
   }
 
   #hero button {
-    padding: 8px 20px;
+    padding: 8px 15px;
   }
 
-  #hero .img-fluid {
+  #hero .img-fluid,
+  #features .tabs .img-fluid {
     max-width: 100%;
   }
- 
+
   #hero .image-blue-bg {
     width: 100%;
     height: 75%;
     bottom: -2%;
     right: -30%;
+  }
+
+  #features .illustration-image .image-blue-bg {
+    bottom: -20%;
+  }
+
+  #features button {
+    display: block;
+    padding: 8px 30px;
+  }
+
+  #features .col-lg-5 {
+    margin-top: 0;
+  }
+
+  #features .col-lg-5 h2,
+  #features .col-lg-5 p {
+    margin: unset;
   }
 }
 
