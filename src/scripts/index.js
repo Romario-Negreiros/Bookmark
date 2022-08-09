@@ -13,3 +13,34 @@ navToggler.addEventListener('click', event => {
   navTogglerIcon.src = 'src/assets/icon-close.svg'
   window.document.body.classList.add('mobile-menu-active')
 })
+
+
+/* Features section tabs */
+const tabsNavLinks = Array.from(document.querySelectorAll('#features .nav-link'))
+const tabs = Array.from(document.querySelectorAll('.tab'))
+
+tabsNavLinks.forEach((tabNavLink, tabNavLinkIndex) => {
+  tabNavLink.addEventListener('click', event => {
+    event.preventDefault()
+
+    tabs.forEach((tab, tabIndex) => {
+      if (tab.classList.contains('active')) {
+        tab.classList.remove('active')
+      }
+
+      if (tabIndex === tabNavLinkIndex) {
+        tab.classList.add('active')
+      }
+    })
+
+    tabsNavLinks.forEach(tabNavLink2 => {
+      if (tabNavLink2.classList.contains('active')) {
+        tabNavLink2.classList.remove('active')
+        tabNavLink2.removeAttribute('aria-selected')
+      }
+    })
+
+    event.target.classList.add('active')
+    event.target.setAttribute('aria-selected', 'true')
+  })
+})
