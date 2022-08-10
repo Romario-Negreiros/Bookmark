@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-- [Hero section screenshot](src/assets/screenshot.png)
+![Hero section screenshot](src/assets/screenshot.png)
 
 ### Links
 
