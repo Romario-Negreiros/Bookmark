@@ -74,7 +74,7 @@ section {
   border-top: 1px solid var(--grayish-blue);
 }
 
-#header .nav-link {
+#header .nav-link, #footer .nav-link {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -90,7 +90,7 @@ section {
   font-weight: 500;
 }
 
-#header .nav-link:hover {
+#header .nav-link:hover, #footer .nav-link:hover {
   color: var(--soft-red)
 }
 
@@ -100,7 +100,7 @@ section {
   color: var(--soft-red);
 }
 
-#header .nav-item:last-child {
+#header .nav-item:last-child, #footer .nav-item:last-child {
   border: 0;
   align-self: flex-end;
   display: flex;
@@ -302,12 +302,63 @@ section {
   margin-top: 70px;
   color: #fff;
   padding: 10px 30px;
+  border: 2px solid transparent;
 }
 
 #faq .col-12 .btn:hover {
   color: var(--soft-blue);
   background-color: #fff;
   border-color: var(--soft-blue);
+}
+
+#footer {
+  margin-top: 70px;
+}
+
+#footer .contact-us {
+  color: #fff;
+  text-align: center;
+  padding: 70px 50px;
+}
+
+#footer .contact-us p {
+  letter-spacing: 4px;
+}
+
+#footer .form {
+  max-width: 600px;
+  margin: auto;
+}
+
+#footer .form .form-control,
+#footer .form .btn {
+  padding: 15px; 
+}
+
+#footer .form .btn {
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+#footer .form .btn:hover {
+  color: var(--soft-red);
+  background-color: #fff;
+  border-color: var(--soft-red)
+}
+
+#footer .navbar {
+  padding: 40px;
+  background-color: var(--very-dark-blue);
+  justify-content: center;
+  text-align: center;
+}
+
+#footer .navbar-nav {
+  flex-flow: row wrap;
+}
+
+#footer .nav-item {
+  width: 100%;
 }
 
 @media screen and (min-width: 576px) {
@@ -444,6 +495,35 @@ section {
 
   #download .card-separation {
     bottom: 33%;
+  }
+
+  #footer nav {
+    width: 100%;  
+    display: flex;
+    align-items: center;
+  }
+
+  #footer .flex-grow-md-1 {
+    width: 100%;
+  }
+
+  #footer .nav-item {
+    width: fit-content;
+  }
+
+  #footer .navbar-nav {
+    margin-top: 7px;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: unset;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #footer .nav-item:last-child {    
+    align-self: unset;
+    flex-grow: 1;
+    justify-content: flex-end;
   }
 }
 
