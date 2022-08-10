@@ -14,9 +14,10 @@ navToggler.addEventListener('click', event => {
   window.document.body.classList.add('mobile-menu-active')
 })
 
-
 /* Features section tabs */
-const tabsNavLinks = Array.from(document.querySelectorAll('#features .nav-link'))
+const tabsNavLinks = Array.from(
+  document.querySelectorAll('#features .nav-link')
+)
 const tabs = Array.from(document.querySelectorAll('.tab'))
 
 tabsNavLinks.forEach((tabNavLink, tabNavLinkIndex) => {
@@ -44,3 +45,18 @@ tabsNavLinks.forEach((tabNavLink, tabNavLinkIndex) => {
     event.target.setAttribute('aria-selected', 'true')
   })
 })
+
+/* Form validation */
+const form = document.querySelector('.needs-validation')
+
+form.addEventListener(
+  'submit',
+  event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+  }
+)
