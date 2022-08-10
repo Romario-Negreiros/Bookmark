@@ -11,10 +11,8 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -30,34 +28,31 @@ Users should be able to:
 
 ### Screenshot
 
-Soon...
+- [Hero section screenshot](src/assets/screenshot.png)
 
 ### Links
 
-Soon...
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- [Live site](https://your-live-site-url.com)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
+- Bootstrap
 - Mobile-first workflow
 
 ### What I learned
 
-Soon...
+- How to use bootstrap to ease the layout construction and page's styling
 
 ### Useful resources
 
-Soon...
+- [Bootstrap 5.2 Docs](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
 ## Author
 
 - Website - [Romario Negreiros](https://romario-negreiros.github.io/Romario-frontend/)
 - Frontend Mentor - [@Romario-Negreiros](https://www.frontendmentor.io/profile/Romario-Negreiros)
 - Github profile - [Romario-Negreiros](https://github.com/Romario-Negreiros)
-- Linkedin profile = [Romario Negreiros](https://www.linkedin.com/in/romario-negreiros-8591b6214/)
-
-<!-- ## Acknowledgments -->
+- Linkedin profile - [Romario Negreiros](https://www.linkedin.com/in/romario-negreiros-8591b6214/)
