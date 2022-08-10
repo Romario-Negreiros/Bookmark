@@ -166,10 +166,7 @@ section {
   margin-top: 100px;
 }
 
-#features .col-12 h2,
-#features .col-12 p,
-#download .col-12 h2,
-#download .col-12 p {
+.cap-width {
   max-width: 500px;
   margin: auto;
 }
@@ -295,6 +292,22 @@ section {
   bottom: 27%;
   width: 102%;
   border-bottom: 5px dotted #ccc;
+}
+
+#faq .accordion {
+  margin-top: 70px;
+}
+
+#faq .col-12 .btn {
+  margin-top: 70px;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+#faq .col-12 .btn:hover {
+  color: var(--soft-blue);
+  background-color: #fff;
+  border-color: var(--soft-blue);
 }
 
 @media screen and (min-width: 576px) {
